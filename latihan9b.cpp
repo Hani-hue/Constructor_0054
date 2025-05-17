@@ -105,3 +105,13 @@ int main()
     vector<Buku> daftar_buku;
     daftar_buku.push_back(buku1);
     daftar_buku.push_back(buku2);
+    Petugas petugas1("Budi", "P001");
+    petugas1.dapatMengaksesBuku(&daftar_buku[0]); // Memberikan akses ke buku1 (perlu pointer)
+    petugas1.prosesPeminjaman(&daftar_buku[0], "Andi");
+    petugas1.prosesPengembalian(&daftar_buku[0]);
+
+    Admin admin1("Siti", "A001", "Tinggi");
+    admin1.menambahkanBuku(daftar_buku, Buku("Negeri 5 Menara", "Ahmad Fuadi", false));
+
+    return 0;
+}
