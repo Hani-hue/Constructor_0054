@@ -17,3 +17,6 @@ public:
 class Petugas
 {
 public:
+    string nama;
+    string id_petugas;
+    vector<Buku *> daftar_buku_akses; // Daftar pointer Buku yang dapat diakses petugas
