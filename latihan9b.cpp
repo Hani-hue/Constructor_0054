@@ -83,3 +83,5 @@ public:
         }
     }
 };
+
+class Admin : public Petugas
