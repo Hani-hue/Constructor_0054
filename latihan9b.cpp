@@ -28,3 +28,14 @@ public:
     }
 
     void prosesPeminjaman(Buku *buku, std::string peminjam)
+    {
+        bool akses_diberikan = false;
+        for (Buku *buku_akses : daftar_buku_akses)
+        {
+            if (buku_akses == buku)
+            {
+                akses_diberikan = true;
+                break;
+            }
+        }
+    }
