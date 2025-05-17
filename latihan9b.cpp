@@ -21,3 +21,8 @@ public:
     string id_petugas;
     vector<Buku *> daftar_buku_akses; // Daftar pointer Buku yang dapat diakses petugas
     Petugas(std::string nama, std::string id_petugas) : nama(nama), id_petugas(id_petugas) {}
+
+    void dapatMengaksesBuku(Buku *buku)
+    {
+        daftar_buku_akses.push_back(buku);
+    }
