@@ -54,3 +54,5 @@ public:
             std::cout << "Petugas ini tidak memiliki akses untuk meminjamkan buku ini." << std::endl;
         }
     }
+
+    void prosesPengembalian(Buku *buku)
