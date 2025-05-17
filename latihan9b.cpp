@@ -26,3 +26,5 @@ public:
     {
         daftar_buku_akses.push_back(buku);
     }
+
+    void prosesPeminjaman(Buku *buku, std::string peminjam)
