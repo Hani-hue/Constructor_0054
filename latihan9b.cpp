@@ -66,3 +66,20 @@ public:
                 break;
             }
         }
+
+        if (akses_diberikan && buku->status_peminjaman)
+        {
+            buku->status_peminjaman = false;
+            buku->dipinjam_oleh = "";
+            std::cout << buku->judul << " berhasil dikembalikan." << std::endl;
+        }
+        else if (!buku->status_peminjaman)
+        {
+            std::cout << buku->judul << " saat ini tidak sedang dipinjam." << std::endl;
+        }
+        else
+        {
+            std::cout << "Petugas ini tidak memiliki akses untuk menerima pengembalian buku ini." << std::endl;
+        }
+    }
+};
