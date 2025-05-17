@@ -56,3 +56,13 @@ public:
     }
 
     void prosesPengembalian(Buku *buku)
+    {
+        bool akses_diberikan = false;
+        for (Buku *buku_akses : daftar_buku_akses)
+        {
+            if (buku_akses == buku)
+            {
+                akses_diberikan = true;
+                break;
+            }
+        }
