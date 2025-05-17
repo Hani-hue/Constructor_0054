@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 using namespace std;
+
 class Buku
 {
 public:
@@ -12,3 +13,7 @@ public:
 
     Buku(string judul, string penulis, bool status_peminjaman) : judul(judul), penulis(penulis), status_peminjaman(status_peminjaman), dipinjam_oleh("") {}
 };
+
+class Petugas
+{
+public:
