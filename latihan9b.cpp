@@ -99,3 +99,9 @@ public:
 };
 
 int main()
+{
+    Buku buku1("Laskar Pelangi", "Andrea Hirata", false);
+    Buku buku2("Bumi Manusia", "Pramoedya Ananta Toer", false);
+    vector<Buku> daftar_buku;
+    daftar_buku.push_back(buku1);
+    daftar_buku.push_back(buku2);
