@@ -87,13 +87,15 @@ public:
 class Admin : public Petugas
 {
 public:
-    std::string level_akses;
+    string level_akses;
 
-    Admin(std::string nama, std::string id_petugas, std::string level_akses) : Petugas(nama, id_petugas), level_akses(level_akses) {}
+    Admin(string nama, string id_petugas, string level_akses) : Petugas(nama, id_petugas), level_akses(level_akses) {}
 
     void menambahkanBuku(std::vector<Buku> &daftar_buku, Buku buku_baru)
     {
         daftar_buku.push_back(buku_baru);
-        std::cout << buku_baru.judul << " berhasil ditambahkan ke daftar buku." << std::endl;
+        cout << buku_baru.judul << " berhasil ditambahkan ke daftar buku." << endl;
     }
 };
+
+int main()
